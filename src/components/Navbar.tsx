@@ -72,9 +72,14 @@ function Navbar() {
       <div className="theme-container container">
         <div className="d-flex d-md-inline justify-content-between align-items-center">
           <Link className="navbar-brand d-inline" href="/"> 
-            <img src="assets/img/logo/logo.png" alt="logo" />
+            <img src="/logo.png" alt="logo" />
             {/* <h1 className="d-inline">Msd</h1> */}
           </Link>
+          <ul className="navbar-nav theme-menu flex-row align-items-center d-none d-md-flex">
+              {pages.map(page => (
+                <li key={page.text}><Link href={page.link}>{page.text}</Link></li>
+                ))}
+            </ul>
           <div className="uppercase fs-6 d-md-none" onClick={toggleMenu}>Menu</div>
         </div>
         <AnimatePresence>
@@ -104,12 +109,6 @@ function Navbar() {
                 </motion.div>
                 }
         </AnimatePresence>
-            <ul className="navbar-nav theme-menu flex-row align-items-center d-none d-md-flex">
-              {pages.map(page => (
-                <li key={page.text}><Link href={page.link}>{page.text}</Link></li>
-                ))}
-            </ul>
-          
         </div>
     </motion.nav>
   );

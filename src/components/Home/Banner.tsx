@@ -44,7 +44,7 @@ const Banner: React.FC = () => {
                 variants={textVariant}
                 >
                 <img className="pt-10 effect animated fadeInLeft" alt="" src="assets/img/icons/icon-1.png" />
-                <h1 className="fs-20 fw-600" style={{textTransform: 'uppercase'}}>morrissameday couriers</h1>
+                <h1 className="fs-20 fw-600" style={{textTransform: 'uppercase'}}>morris sameday couriers</h1>
                 <h2 className="section-title fs-48 mt-4" style={{letterSpacing: '8px', lineHeight: '64px'}}> same day courier <br /> services </h2>
             </motion.div>
             <div className="pad-50 visible-lg"></div>
