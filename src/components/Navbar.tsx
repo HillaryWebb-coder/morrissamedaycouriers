@@ -73,7 +73,7 @@ function Navbar() {
       <div className="theme-container container">
         <div className="d-flex d-md-inline justify-content-between align-items-center">
           <Link className="navbar-brand d-inline" href="/"> 
-            <Image width={100} height={100} src="/logo.png" alt="logo" />
+            <Image width={50} height={100} src="/logo.png" alt="logo" />
             {/* <h1 className="d-inline">Msd</h1> */}
           </Link>
           <ul className="navbar-nav theme-menu flex-row align-items-center d-none d-md-flex">
