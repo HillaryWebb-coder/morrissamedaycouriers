@@ -21,6 +21,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 
 type pages = page[]
 
@@ -72,7 +73,7 @@ function Navbar() {
       <div className="theme-container container">
         <div className="d-flex d-md-inline justify-content-between align-items-center">
           <Link className="navbar-brand d-inline" href="/"> 
-            <img src="/logo.png" alt="logo" />
+            <Image width={150} height={150} src="/logo.png" alt="logo" />
             {/* <h1 className="d-inline">Msd</h1> */}
           </Link>
           <ul className="navbar-nav theme-menu flex-row align-items-center d-none d-md-flex">
